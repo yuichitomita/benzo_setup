@@ -31,7 +31,7 @@ https://drive.google.com/drive/u/0/folders/0B4RO2XJ0Np_pTTBiM1ExUnlHT3M
   ## 作業ディレクトリへ移動
   $ cd ~/tmp
   ## vagrantの初期化
-  $ vagrant init VM_NAME
+  $ vagrant init centos6.5_box 
   ## vagrantファイルができているのを確認
   # Vagrantfile
   $ cd ~/tmp && ls
