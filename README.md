@@ -17,11 +17,12 @@ https://drive.google.com/drive/u/0/folders/0B4RO2XJ0Np_pTTBiM1ExUnlHT3M
   ## boxファイルを落としたディレクトリに移動
   $ cd　/インストール先path/ 
   ## box追加のコマンドを実行
-  $ vagrant box add BOX_NAME ./benzo_20170322.box`
+  $ vagrant box add centos6.5_box ./benzo_20170323.box
   ```
 3. box一覧への追加を確認  
   ```bash
-  $ vagrant box list
+  ## centos6.5_box が表示されること
+  $ vagrant box list
   ```
 4. vagrantファイルを新規作成する
   ```bash
@@ -32,6 +33,7 @@ https://drive.google.com/drive/u/0/folders/0B4RO2XJ0Np_pTTBiM1ExUnlHT3M
   ## vagrantの初期化
   $ vagrant init VM_NAME
   ## vagrantファイルができているのを確認
+  # Vagrantfile
   $ cd ~/tmp && ls
   ```
 5. vagrant を起動し、ssh接続する
