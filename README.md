@@ -15,7 +15,7 @@ https://drive.google.com/drive/u/0/folders/0B4RO2XJ0Np_pTTBiM1ExUnlHT3M
 2. vagrantにboxを追加する
   ```bash
   ## boxファイルを落としたディレクトリに移動
-  $ cd　/インストール先path/ 
+  $ cd　インストール先path 
   ## box追加のコマンドを実行
   $ vagrant box add centos6.5_box ./benzo_20170323.box
   ```
