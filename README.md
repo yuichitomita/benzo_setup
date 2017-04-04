@@ -1,5 +1,5 @@
 # benzo_setup
-Benzo2回目の勉強会までの環境ファイルの共有用リポジトリ
+Benzo2回目の勉強会までの環境ファイルの共有用リポジトリ  
 (下記の作業をすると２回目に参加していない人も、同じ環境が手に入ります)
 
 ## 前提条件
@@ -19,10 +19,10 @@ https://drive.google.com/drive/u/0/folders/0B4RO2XJ0Np_pTTBiM1ExUnlHT3M
   ## box追加のコマンドを実行
   $ vagrant box add BOX_NAME ./benzo_20170322.box`
   ```
-1. box一覧への追加を確認  
+2. box一覧への追加を確認  
   `$ vagrant box list`
 
-1. vagrantファイルを新規作成する
+3. vagrantファイルを新規作成する
   ```bash
   ## 作業ディレクトリ作成
   $ mkdir ~/tmp
@@ -33,7 +33,7 @@ https://drive.google.com/drive/u/0/folders/0B4RO2XJ0Np_pTTBiM1ExUnlHT3M
   ## vagrantファイルができているのを確認
   $ cd ~/tmp && ls
   ```
-1. vagrant を起動し、ssh接続する
+4. vagrant を起動し、ssh接続する
   ```sh
   ## サーバー起動
   $ vagrant up　　
