@@ -4,7 +4,7 @@ Benzo2回目の勉強会までの環境ファイルの共有用リポジトリ
 
 ## 前提条件 
 ### 下記のツールをインストールしていること 
-[VirtualBox(5.1)](https://www.virtualbox.org/) 
+[VirtualBox(5.1)](https://www.virtualbox.org/)   
 [vagrant(1.9.8)](https://www.vagrantup.com/) 
 
 ## setup手順 
