@@ -7,7 +7,10 @@ Benzo2回目の勉強会までの環境ファイルの共有用リポジトリ
 [VirtualBox(5.1)](https://www.virtualbox.org/)   
 [vagrant(1.9.8)](https://www.vagrantup.com/)
 
-## setup手順
+## setup手順 
+注意:下記のコマンドは、Linux系OSのコマンド操作を前提としています  
+windowsの場合は、コマンドプロンプトに読み換える or ターミナルソフトを別途インストールしてください(個人的なオススメは、Cygwin)
+
 1. boxファイルをダウンロード
 下記のgoogleドライブより、自分のPCローカルにboxファイルを落としてください
 https://drive.google.com/drive/u/0/folders/0B4RO2XJ0Np_pTTBiM1ExUnlHT3M
@@ -27,14 +30,14 @@ https://drive.google.com/drive/u/0/folders/0B4RO2XJ0Np_pTTBiM1ExUnlHT3M
 4. vagrantファイルを新規作成する
   ```bash
   ## 作業ディレクトリ作成
-  $ mkdir ~/tmp
-  ## 作業ディレクトリへ移動
-  $ cd ~/tmp
+  $ mkdir "作業用ディレクトリ"
+  ## 作業ディレクトリへ移動
+  $ cd "作業用ディレクトリ"
   ## vagrantの初期化
   $ vagrant init centos6.5_box 
   ## vagrantファイルができているのを確認
   # Vagrantfile
-  $ cd ~/tmp; ls
+  $ cd  "作業用ディレクトリ"; ls
   ```
 5. vagrant を起動し、ssh接続する
   ```sh
