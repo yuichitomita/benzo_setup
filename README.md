@@ -16,6 +16,8 @@ windowsの場合は、コマンドプロンプトに読み換える or
 下記のgoogleドライブより、自分のPCローカルにboxファイルを落としてください
 https://drive.google.com/drive/u/0/folders/0B4RO2XJ0Np_pTTBiM1ExUnlHT3M
 
+![手順1](img/setup_manual_1.png)
+
 2. vagrantにboxを追加する
   ```bash
   ## boxファイルを落としたディレクトリに移動
