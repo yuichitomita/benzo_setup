@@ -14,12 +14,11 @@ windowsの場合は、コマンドプロンプトに読み換える or
 
 1. boxファイルをダウンロード
 下記のgoogleドライブより、自分のPCローカルにboxファイルを落としてください
-(勉強会が終了した時点での、仮想環境の状態を保存しています)
 https://drive.google.com/drive/u/0/folders/0B4RO2XJ0Np_pTTBiM1ExUnlHT3M
 
-勉強会が終了した時点での、仮想環境の状態を保存しています
-最新の勉強会の日付ディレクトリのboxファイルを取得するようお願いいたします
-![手順1](img/setup_manual_1.png)
+勉強会が終了した時点での、仮想環境の状態を保存しています  
+直近の勉強会実施日ディレクトリのboxファイルを取得するようお願いいたします
+<img src="img/setup_manual_1.png" width="800px">
 
 2. vagrantにboxを追加する
   ```bash
