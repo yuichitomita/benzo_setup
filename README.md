@@ -16,7 +16,8 @@ windowsの場合は、コマンドプロンプトに読み換える or
 下記のgoogleドライブより、自分のPCローカルにboxファイルを落としてください
 https://drive.google.com/drive/u/0/folders/0B4RO2XJ0Np_pTTBiM1ExUnlHT3M  
 - 勉強会が終了した時点での、仮想環境の状態を保存しています
-- 直近の勉強会実施日ディレクトリのboxファイルを取得するようお願いいたします  
+- 直近で開催された勉強会日のディレクトリからboxファイルを取得するようお願いいたします 
+- boxファイル名は`benzo.box`  
 <img src="img/setup_manual_1.png" width="800px">
 
 2. vagrantにboxを追加する
