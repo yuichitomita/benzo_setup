@@ -14,8 +14,11 @@ windowsの場合は、コマンドプロンプトに読み換える or
 
 1. boxファイルをダウンロード
 下記のgoogleドライブより、自分のPCローカルにboxファイルを落としてください
+(勉強会が終了した時点での、仮想環境の状態を保存しています)
 https://drive.google.com/drive/u/0/folders/0B4RO2XJ0Np_pTTBiM1ExUnlHT3M
 
+勉強会が終了した時点での、仮想環境の状態を保存しています
+最新の勉強会の日付ディレクトリのboxファイルを取得するようお願いいたします
 ![手順1](img/setup_manual_1.png)
 
 2. vagrantにboxを追加する
@@ -23,7 +26,7 @@ https://drive.google.com/drive/u/0/folders/0B4RO2XJ0Np_pTTBiM1ExUnlHT3M
   ## boxファイルを落としたディレクトリに移動
   $ cd　インストール先path 
   ## box追加のコマンドを実行
-  $ vagrant box add centos6.5_box ./benzo_20170323.box
+  $ vagrant box add centos6.5_box ./benzo.box
   ```
 3. box一覧への追加を確認  
   ```bash
