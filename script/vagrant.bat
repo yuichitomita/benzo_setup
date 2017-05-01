@@ -1,52 +1,52 @@
 @echo off
 
-:box‚ğƒ_ƒEƒ“ƒ[ƒh‚µ‚½ƒfƒBƒŒƒNƒgƒŠ‚ÉˆÚ“®
+:boxã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ãŸãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã«ç§»å‹•
 cd %USERPROFILE%/Downloads
 
-:box’Ç‰Á(centos6.5_box)
+:boxè¿½åŠ (centos6.5_box)
 vagrant box add centos6.5_box ./benzo.box
 
-:boxˆê——‚ğ•\¦
+:boxä¸€è¦§ã‚’è¡¨ç¤º
 vagrant box list
 
-:’Ç‰Á‚µ‚½box‚Ì‘¶İŠm”F
-set /P flg="centos6.5_box‚Í‚ ‚è‚Ü‚µ‚½‚©H(Y/N)"
+:è¿½åŠ ã—ãŸboxã®å­˜åœ¨ç¢ºèª
+set /P flg="centos6.5_boxã¯ã‚ã‚Šã¾ã—ãŸã‹ï¼Ÿ(Y/N)"
 
 if "%flg%" == "Y" (
 
-:’Ç‰Á‚Å‚«‚½‚ç‚±‚Á‚¿
-echo ‚¢‚¢‚İ‚½‚¢
+:è¿½åŠ ã§ããŸã‚‰ã“ã£ã¡
+echo ã„ã„ã¿ãŸã„
 
-:ì‹Æ—pƒfƒBƒŒƒNƒgƒŠ‚ğì¬
+:ä½œæ¥­ç”¨ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’ä½œæˆ
 mkdir %USERPROFILE%\Desktop\benzo
 
-:ì‹Æ—pƒfƒBƒŒƒNƒgƒŠ‚ÉˆÚ“®
+:ä½œæ¥­ç”¨ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã«ç§»å‹•
 cd %USERPROFILE%\Desktop\benzo
 
-:vagrant‚ğ‰Šú‰»
+:vagrantã‚’åˆæœŸåŒ–
 vagrant init centos6.5_box
 
-:vagrantƒtƒ@ƒCƒ‹‚ª‚Å‚«‚Ä‚é‚©Šm”F
+:vagrantãƒ•ã‚¡ã‚¤ãƒ«ãŒã§ãã¦ã‚‹ã‹ç¢ºèª
 cd %USERPROFILE%\Desktop\benzo & dir
 
-set /P flg="vagrantfile‚Í‚ ‚è‚Ü‚µ‚½‚©H(Y/N)"
+set /P flg="vagrantfileã¯ã‚ã‚Šã¾ã—ãŸã‹ï¼Ÿ(Y/N)"
 
 if "%flg%" == "Y" (
 
-:vagrantƒtƒ@ƒCƒ‹‚ª‚ ‚ê‚Î‚±‚Á‚¿
-echo ‚¢‚¢‚İ‚½‚¢part2
+:vagrantãƒ•ã‚¡ã‚¤ãƒ«ãŒã‚ã‚Œã°ã“ã£ã¡
+echo ã„ã„ã¿ãŸã„part2
 
-:vagrant‚ğ‹N“®
+:vagrantã‚’èµ·å‹•
 vagrant up
 
-echo ‚±‚ê‚ÅI‚í‚è‚¾‚¨I
+echo ã“ã‚Œã§çµ‚ã‚ã‚Šã ãŠï¼
 ) else (
 
-:vagrantƒtƒ@ƒCƒ‹‚ª‚È‚¯‚ê‚Î‚±‚Á‚¿
-echo ƒ_ƒ‚İ‚½‚¢part2
+:vagrantãƒ•ã‚¡ã‚¤ãƒ«ãŒãªã‘ã‚Œã°ã“ã£ã¡
+echo ãƒ€ãƒ¡ã¿ãŸã„part2
 )
 ) else (
-:’Ç‰Á‚Å‚«‚È‚©‚Á‚½‚ç‚±‚Á‚¿
-echo ƒ_ƒ‚İ‚½‚¢
+:è¿½åŠ ã§ããªã‹ã£ãŸã‚‰ã“ã£ã¡
+echo ãƒ€ãƒ¡ã¿ãŸã„
 )
 pause

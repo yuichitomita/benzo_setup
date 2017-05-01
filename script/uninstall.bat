@@ -2,53 +2,53 @@
 
 cd %USERPROFILE%\Desktop\benzo
 
-:”O‚Ì‚½‚ßAvagrant‚ğ’â~
+:å¿µã®ãŸã‚ã€vagrantã‚’åœæ­¢
 vagrant halt
 
-:”O‚Ì‚½‚ßAvagrant‚Ìó‘Ô‚ğŠm”F
+:å¿µã®ãŸã‚ã€vagrantã®çŠ¶æ…‹ã‚’ç¢ºèª
 vagrant status
 
-set /P flg="vagrant‚Í~‚Ü‚Á‚Ä‚Ü‚µ‚½‚©H(Y/N)"
+set /P flg="vagrantã¯æ­¢ã¾ã£ã¦ã¾ã—ãŸã‹ï¼Ÿ(Y/N)"
 
 echo "%flg%"
 
 if "%flg%" == "Y" (
 
-:vagrant‚ª~‚Ü‚Á‚Ä‚¢‚ê‚Î‚±‚Á‚¿
-echo ‚¢‚¢‚İ‚½‚¢
+:vagrantãŒæ­¢ã¾ã£ã¦ã„ã‚Œã°ã“ã£ã¡
+echo ã„ã„ã¿ãŸã„
 
-echo ƒRƒ“ƒgƒ[ƒ‹ƒpƒlƒ‹‚Åvagrant‚ğƒAƒ“ƒCƒ“ƒXƒg[ƒ‹‚µ‚Ä‚¿‚å
+echo ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ãƒ‘ãƒãƒ«ã§vagrantã‚’ã‚¢ãƒ³ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¦ã¡ã‚‡
 
-set /P flg="vagrant‚Ííœ‚³‚ê‚Ü‚µ‚½‚©H(Y/N)"
+set /P flg="vagrantã¯å‰Šé™¤ã•ã‚Œã¾ã—ãŸã‹ï¼Ÿ(Y/N)"
 
 if "%flg%" == "Y" (
 
-:vagrant‚ªíœ‚³‚ê‚Ä‚¢‚½‚ç‚±‚Á‚¿
-echo ‚¢‚¢‚İ‚½‚¢part2
+:vagrantãŒå‰Šé™¤ã•ã‚Œã¦ã„ãŸã‚‰ã“ã£ã¡
+echo ã„ã„ã¿ãŸã„part2
 
 cd C:\Windows\System32
 
-:virtualbox‚ğƒAƒ“ƒCƒ“ƒXƒg[ƒ‹
+:virtualboxã‚’ã‚¢ãƒ³ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 MsiExec.exe /I{CD6E345E-ECBC-4F98-BB28-276ACBBCD4DE}
 
 cd %USERPROFILE%\Desktop
 
-:ì‹Æ—pƒfƒBƒŒƒNƒgƒŠ‚Ìíœ
+:ä½œæ¥­ç”¨ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã®å‰Šé™¤
 rd /s /q benzo
 
 dir
 
-echo ‚±‚ê‚ÅI‚í‚è‚¾‚¨I
+echo ã“ã‚Œã§çµ‚ã‚ã‚Šã ãŠï¼
 ) else (
 
-:vagrant‚ªíœ‚³‚ê‚Ä‚¢‚È‚¯‚ê‚Î‚±‚Á‚¿
-echo ƒ_ƒ‚İ‚½‚¢part2
+:vagrantãŒå‰Šé™¤ã•ã‚Œã¦ã„ãªã‘ã‚Œã°ã“ã£ã¡
+echo ãƒ€ãƒ¡ã¿ãŸã„part2
 )
 
 ) else (
 
-:vagrantƒtƒ@ƒCƒ‹‚ª‚È‚¯‚ê‚Î‚±‚Á‚¿
-echo ƒ_ƒ‚İ‚½‚¢
+:vagrantãƒ•ã‚¡ã‚¤ãƒ«ãŒãªã‘ã‚Œã°ã“ã£ã¡
+echo ãƒ€ãƒ¡ã¿ãŸã„
 )
 
 pause
