@@ -1,5 +1,4 @@
 @echo off
-
 cd %USERPROFILE%\Desktop\benzo
 
 :念のため、vagrantを停止
