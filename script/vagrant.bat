@@ -1,5 +1,4 @@
 @echo off
-
 :boxをダウンロードしたディレクトリに移動
 cd %USERPROFILE%/Downloads
 
