@@ -1,53 +1,53 @@
 @echo off
 cd %USERPROFILE%\Desktop\benzo
 
-:念のため、vagrantを停止
+:Just in case, vagrant is halt.
 vagrant halt
 
-:念のため、vagrantの状態を確認
+:Just in case, confirm vagrant status.
 vagrant status
 
-set /P flg="vagrantは止まってましたか？(Y/N)"
+set /P flg="vagrant is halted？(Y/N)"
 
 echo "%flg%"
 
 if "%flg%" == "Y" (
 
-:vagrantが止まっていればこっち
-echo いいみたい
+	:Success part1
+	echo Successfully halted
 
-echo コントロールパネルでvagrantをアンインストールしてちょ
+	echo Uninstall vagrant on Controll-Panel
 
-set /P flg="vagrantは削除されましたか？(Y/N)"
+	set /P flg="vagrant is deleted？(Y/N)"
 
-if "%flg%" == "Y" (
+	if "%flg%" == "Y" (
 
-:vagrantが削除されていたらこっち
-echo いいみたいpart2
+		:Success part2
+		echo Succesfully deleted
 
-cd C:\Windows\System32
+		cd C:\Windows\System32
 
-:virtualboxをアンインストール
-MsiExec.exe /I{CD6E345E-ECBC-4F98-BB28-276ACBBCD4DE}
+		:Uninstall the vurtualbox.
+		MsiExec.exe /I{CD6E345E-ECBC-4F98-BB28-276ACBBCD4DE}
 
-cd %USERPROFILE%\Desktop
+		cd %USERPROFILE%\Desktop
 
-:作業用ディレクトリの削除
-rd /s /q benzo
+		:Delete work directory.
+		rd /s /q benzo
 
-dir
+		dir
 
-echo これで終わりだお！
+		echo Finish!!!!！
+	) else (
+
+		:Not success part2
+		echo Vagrant isnt deleted
+	)
+
 ) else (
 
-:vagrantが削除されていなければこっち
-echo ダメみたいpart2
-)
-
-) else (
-
-:vagrantファイルがなければこっち
-echo ダメみたい
+	:Not success part1
+	echo Vagrant isnt halted
 )
 
 pause
