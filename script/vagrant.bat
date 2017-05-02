@@ -1,51 +1,48 @@
 @echo off
-:boxをダウンロードしたディレクトリに移動
+:Move to directory downloaded box is set.
 cd %USERPROFILE%/Downloads
 
-:box追加(centos6.5_box)
+:Add box(centos6.5_box)
 vagrant box add centos6.5_box ./benzo.box
 
-:box一覧を表示
+:Display box list.
 vagrant box list
 
-:追加したboxの存在確認
-set /P flg="centos6.5_boxはありましたか？(Y/N)"
+:Confirm added box.
+set /P flg="Are there centos6.5_box？(Y/N)"
 
 if "%flg%" == "Y" (
 
-:追加できたらこっち
-echo いいみたい
+:Success part1
+echo Success!
 
-:作業用ディレクトリを作成
+:Make work directory.
 mkdir %USERPROFILE%\Desktop\benzo
 
-:作業用ディレクトリに移動
+:Move to work directory
 cd %USERPROFILE%\Desktop\benzo
 
-:vagrantを初期化
+:Initialize vagrant
 vagrant init centos6.5_box
 
-:vagrantファイルができてるか確認
+:Confirm Vagrantfile
 cd %USERPROFILE%\Desktop\benzo & dir
 
-set /P flg="vagrantfileはありましたか？(Y/N)"
+set /P flg="Are there Vagrantfile？(Y/N)"
 
 if "%flg%" == "Y" (
 
-:vagrantファイルがあればこっち
-echo いいみたいpart2
+:Success part2
+echo Success part2!
 
-:vagrantを起動
-vagrant up
-
-echo これで終わりだお！
+echo Finish!!!!!!!!!
 ) else (
 
-:vagrantファイルがなければこっち
-echo ダメみたいpart2
+:Not success part2
+echo There arent Vagrantfile
 )
 ) else (
-:追加できなかったらこっち
-echo ダメみたい
+:Not success part1
+echo There arent centos6.5_box
 )
 pause
